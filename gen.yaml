@@ -4,6 +4,6 @@ generation:
     sdkClassName: SDK
 java:
     version: 0.0.1
-    artifactID: openapi
-    groupID: org.openapis
+    artifactID: api
+    groupID: com.airbyte
     projectName: openapi
