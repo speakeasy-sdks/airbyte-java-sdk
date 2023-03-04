@@ -1,10 +1,14 @@
 configVersion: 1.0.0
+management:
+  docChecksum: c73e1b875a571841a5b726b7f610ff9d
+  docVersion: 0.1.0
+  speakeasyVersion: 1.8.2
 generation:
-    telemetryEnabled: false
-    sdkClassName: airbyte
-    sdkFlattening: true
+  telemetryEnabled: false
+  sdkClassName: airbyte
+  sdkFlattening: true
 java:
-    version: 0.0.1
-    artifactID: api
-    groupID: com.airbyte
-    projectName: openapi
+  version: 0.1.0
+  artifactID: api
+  groupID: com.airbyte
+  projectName: openapi
