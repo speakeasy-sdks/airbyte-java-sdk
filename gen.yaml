@@ -1,7 +1,8 @@
 configVersion: 1.0.0
 generation:
     telemetryEnabled: false
-    sdkClassName: SDK
+    sdkClassName: airbyte
+    sdkFlattening: true
 java:
     version: 0.0.1
     artifactID: api
