@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationMssql
+ * The values required to configure the destination.
+**/
 public class DestinationMssql {
     @JsonProperty("airbyte-destination-name")
     public DestinationMssqlMssqlEnum airbyteDestinationName;
@@ -58,16 +62,16 @@ public class DestinationMssql {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("ssl_method")
-    public java.util.Map<String, Object> sslMethod;
-    public DestinationMssql withSslMethod(java.util.Map<String, Object> sslMethod) {
+    public Object sslMethod;
+    public DestinationMssql withSslMethod(Object sslMethod) {
         this.sslMethod = sslMethod;
         return this;
     }
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tunnel_method")
-    public java.util.Map<String, Object> tunnelMethod;
-    public DestinationMssql withTunnelMethod(java.util.Map<String, Object> tunnelMethod) {
+    public Object tunnelMethod;
+    public DestinationMssql withTunnelMethod(Object tunnelMethod) {
         this.tunnelMethod = tunnelMethod;
         return this;
     }

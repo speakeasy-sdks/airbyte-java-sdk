@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationDatabricks
+ * The values required to configure the destination.
+**/
 public class DestinationDatabricks {
     @JsonProperty("accept_terms")
     public Boolean acceptTerms;
@@ -20,8 +24,8 @@ public class DestinationDatabricks {
     }
     
     @JsonProperty("data_source")
-    public java.util.Map<String, Object> dataSource;
-    public DestinationDatabricks withDataSource(java.util.Map<String, Object> dataSource) {
+    public Object dataSource;
+    public DestinationDatabricks withDataSource(Object dataSource) {
         this.dataSource = dataSource;
         return this;
     }

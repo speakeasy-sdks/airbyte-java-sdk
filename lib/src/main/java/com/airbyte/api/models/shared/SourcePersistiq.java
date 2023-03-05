@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourcePersistiq
+ * The values required to configure the source.
+**/
 public class SourcePersistiq {
     @JsonProperty("airbyte-source-name")
     public SourcePersistiqPersistiqEnum airbyteSourceName;

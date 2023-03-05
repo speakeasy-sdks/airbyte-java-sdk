@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationKinesis
+ * The values required to configure the destination.
+**/
 public class DestinationKinesis {
     @JsonProperty("accessKey")
     public String accessKey;

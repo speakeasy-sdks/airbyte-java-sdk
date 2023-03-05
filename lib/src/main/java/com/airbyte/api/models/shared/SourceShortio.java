@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceShortio
+ * The values required to configure the source.
+**/
 public class SourceShortio {
     @JsonProperty("airbyte-source-name")
     public SourceShortioShortioEnum airbyteSourceName;

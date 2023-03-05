@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceApifyDataset
+ * The values required to configure the source.
+**/
 public class SourceApifyDataset {
     @JsonProperty("airbyte-source-name")
     public SourceApifyDatasetApifyDatasetEnum airbyteSourceName;

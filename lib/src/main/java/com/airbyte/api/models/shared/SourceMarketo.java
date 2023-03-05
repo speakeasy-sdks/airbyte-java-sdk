@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceMarketo
+ * The values required to configure the source.
+**/
 public class SourceMarketo {
     @JsonProperty("airbyte-source-name")
     public SourceMarketoMarketoEnum airbyteSourceName;

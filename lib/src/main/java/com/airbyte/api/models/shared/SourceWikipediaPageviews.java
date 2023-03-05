@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceWikipediaPageviews
+ * The values required to configure the source.
+**/
 public class SourceWikipediaPageviews {
     @JsonProperty("access")
     public String access;

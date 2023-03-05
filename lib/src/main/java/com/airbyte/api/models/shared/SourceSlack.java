@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceSlack
+ * The values required to configure the source.
+**/
 public class SourceSlack {
     @JsonProperty("airbyte-source-name")
     public SourceSlackSlackEnum airbyteSourceName;
@@ -22,8 +26,8 @@ public class SourceSlack {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("credentials")
-    public java.util.Map<String, Object> credentials;
-    public SourceSlack withCredentials(java.util.Map<String, Object> credentials) {
+    public Object credentials;
+    public SourceSlack withCredentials(Object credentials) {
         this.credentials = credentials;
         return this;
     }

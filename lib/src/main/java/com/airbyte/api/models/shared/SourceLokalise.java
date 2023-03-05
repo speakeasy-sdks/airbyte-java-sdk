@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceLokalise
+ * The values required to configure the source.
+**/
 public class SourceLokalise {
     @JsonProperty("airbyte-source-name")
     public SourceLokaliseLokaliseEnum airbyteSourceName;

@@ -8,8 +8,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 **/
 public class SourceFaunaCollection {
     @JsonProperty("deletions")
-    public java.util.Map<String, Object> deletions;
-    public SourceFaunaCollection withDeletions(java.util.Map<String, Object> deletions) {
+    public Object deletions;
+    public SourceFaunaCollection withDeletions(Object deletions) {
         this.deletions = deletions;
         return this;
     }

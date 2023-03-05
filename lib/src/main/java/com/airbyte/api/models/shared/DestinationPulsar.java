@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationPulsar
+ * The values required to configure the destination.
+**/
 public class DestinationPulsar {
     @JsonProperty("airbyte-destination-name")
     public DestinationPulsarPulsarEnum airbyteDestinationName;

@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceK6Cloud
+ * The values required to configure the source.
+**/
 public class SourceK6Cloud {
     @JsonProperty("airbyte-source-name")
     public SourceK6CloudK6CloudEnum airbyteSourceName;

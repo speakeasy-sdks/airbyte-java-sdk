@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceHubplanner
+ * The values required to configure the source.
+**/
 public class SourceHubplanner {
     @JsonProperty("airbyte-source-name")
     public SourceHubplannerHubplannerEnum airbyteSourceName;

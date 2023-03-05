@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceGoogleSearchConsole
+ * The values required to configure the source.
+**/
 public class SourceGoogleSearchConsole {
     @JsonProperty("airbyte-source-name")
     public SourceGoogleSearchConsoleGoogleSearchConsoleEnum airbyteSourceName;
@@ -13,8 +17,8 @@ public class SourceGoogleSearchConsole {
     }
     
     @JsonProperty("authorization")
-    public java.util.Map<String, Object> authorization;
-    public SourceGoogleSearchConsole withAuthorization(java.util.Map<String, Object> authorization) {
+    public Object authorization;
+    public SourceGoogleSearchConsole withAuthorization(Object authorization) {
         this.authorization = authorization;
         return this;
     }

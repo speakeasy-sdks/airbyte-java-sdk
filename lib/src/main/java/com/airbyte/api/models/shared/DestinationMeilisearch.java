@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationMeilisearch
+ * The values required to configure the destination.
+**/
 public class DestinationMeilisearch {
     @JsonProperty("airbyte-destination-name")
     public DestinationMeilisearchMeilisearchEnum airbyteDestinationName;

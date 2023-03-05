@@ -9,6 +9,10 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import java.time.OffsetDateTime;
 
+/**
+ * SourceGitlab
+ * The values required to configure the source.
+**/
 public class SourceGitlab {
     @JsonProperty("airbyte-source-name")
     public SourceGitlabGitlabEnum airbyteSourceName;
@@ -25,8 +29,8 @@ public class SourceGitlab {
     }
     
     @JsonProperty("credentials")
-    public java.util.Map<String, Object> credentials;
-    public SourceGitlab withCredentials(java.util.Map<String, Object> credentials) {
+    public Object credentials;
+    public SourceGitlab withCredentials(Object credentials) {
         this.credentials = credentials;
         return this;
     }

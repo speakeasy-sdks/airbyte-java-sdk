@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceMssql
+ * The values required to configure the source.
+**/
 public class SourceMssql {
     @JsonProperty("airbyte-source-name")
     public SourceMssqlMssqlEnum airbyteSourceName;
@@ -51,8 +55,8 @@ public class SourceMssql {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("replication_method")
-    public java.util.Map<String, Object> replicationMethod;
-    public SourceMssql withReplicationMethod(java.util.Map<String, Object> replicationMethod) {
+    public Object replicationMethod;
+    public SourceMssql withReplicationMethod(Object replicationMethod) {
         this.replicationMethod = replicationMethod;
         return this;
     }
@@ -67,16 +71,16 @@ public class SourceMssql {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("ssl_method")
-    public java.util.Map<String, Object> sslMethod;
-    public SourceMssql withSslMethod(java.util.Map<String, Object> sslMethod) {
+    public Object sslMethod;
+    public SourceMssql withSslMethod(Object sslMethod) {
         this.sslMethod = sslMethod;
         return this;
     }
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tunnel_method")
-    public java.util.Map<String, Object> tunnelMethod;
-    public SourceMssql withTunnelMethod(java.util.Map<String, Object> tunnelMethod) {
+    public Object tunnelMethod;
+    public SourceMssql withTunnelMethod(Object tunnelMethod) {
         this.tunnelMethod = tunnelMethod;
         return this;
     }

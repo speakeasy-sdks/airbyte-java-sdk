@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceHubspot
+ * The values required to configure the source.
+**/
 public class SourceHubspot {
     @JsonProperty("airbyte-source-name")
     public SourceHubspotHubspotEnum airbyteSourceName;
@@ -11,8 +15,8 @@ public class SourceHubspot {
     }
     
     @JsonProperty("credentials")
-    public java.util.Map<String, Object> credentials;
-    public SourceHubspot withCredentials(java.util.Map<String, Object> credentials) {
+    public Object credentials;
+    public SourceHubspot withCredentials(Object credentials) {
         this.credentials = credentials;
         return this;
     }

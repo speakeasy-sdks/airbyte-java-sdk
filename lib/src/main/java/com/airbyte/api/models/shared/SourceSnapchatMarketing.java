@@ -6,6 +6,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.LocalDate;
 
+/**
+ * SourceSnapchatMarketing
+ * The values required to configure the source.
+**/
 public class SourceSnapchatMarketing {
     @JsonProperty("airbyte-source-name")
     public SourceSnapchatMarketingSnapchatMarketingEnum airbyteSourceName;

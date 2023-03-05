@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceFaker
+ * The values required to configure the source.
+**/
 public class SourceFaker {
     @JsonProperty("airbyte-source-name")
     public SourceFakerFakerEnum airbyteSourceName;

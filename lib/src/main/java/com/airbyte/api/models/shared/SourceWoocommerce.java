@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.LocalDate;
 
+/**
+ * SourceWoocommerce
+ * The values required to configure the source.
+**/
 public class SourceWoocommerce {
     @JsonProperty("airbyte-source-name")
     public SourceWoocommerceWoocommerceEnum airbyteSourceName;

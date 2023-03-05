@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceMongodb
+ * The values required to configure the source.
+**/
 public class SourceMongodb {
     @JsonProperty("airbyte-source-name")
     public SourceMongodbMongodbEnum airbyteSourceName;
@@ -29,8 +33,8 @@ public class SourceMongodb {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("instance_type")
-    public java.util.Map<String, Object> instanceType;
-    public SourceMongodb withInstanceType(java.util.Map<String, Object> instanceType) {
+    public Object instanceType;
+    public SourceMongodb withInstanceType(Object instanceType) {
         this.instanceType = instanceType;
         return this;
     }

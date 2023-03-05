@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceE2eTestCloud
+ * The values required to configure the source.
+**/
 public class SourceE2eTestCloud {
     @JsonProperty("airbyte-source-name")
     public SourceE2eTestCloudE2eTestCloudEnum airbyteSourceName;
@@ -28,8 +32,8 @@ public class SourceE2eTestCloud {
     }
     
     @JsonProperty("mock_catalog")
-    public java.util.Map<String, Object> mockCatalog;
-    public SourceE2eTestCloud withMockCatalog(java.util.Map<String, Object> mockCatalog) {
+    public Object mockCatalog;
+    public SourceE2eTestCloud withMockCatalog(Object mockCatalog) {
         this.mockCatalog = mockCatalog;
         return this;
     }

@@ -6,6 +6,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.LocalDate;
 
+/**
+ * SourceExchangeRates
+ * The values required to configure the source.
+**/
 public class SourceExchangeRates {
     @JsonProperty("access_key")
     public String accessKey;

@@ -9,6 +9,10 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import java.time.OffsetDateTime;
 
+/**
+ * SourceSurveymonkey
+ * The values required to configure the source.
+**/
 public class SourceSurveymonkey {
     @JsonProperty("airbyte-source-name")
     public SourceSurveymonkeySurveymonkeyEnum airbyteSourceName;

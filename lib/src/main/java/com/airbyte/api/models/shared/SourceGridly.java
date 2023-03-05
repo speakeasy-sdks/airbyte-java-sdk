@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceGridly
+ * The values required to configure the source.
+**/
 public class SourceGridly {
     @JsonProperty("airbyte-source-name")
     public SourceGridlyGridlyEnum airbyteSourceName;

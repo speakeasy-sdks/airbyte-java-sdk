@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationSnowflake
+ * The values required to configure the destination.
+**/
 public class DestinationSnowflake {
     @JsonProperty("airbyte-destination-name")
     public DestinationSnowflakeSnowflakeEnum airbyteDestinationName;
@@ -14,8 +18,8 @@ public class DestinationSnowflake {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("credentials")
-    public java.util.Map<String, Object> credentials;
-    public DestinationSnowflake withCredentials(java.util.Map<String, Object> credentials) {
+    public Object credentials;
+    public DestinationSnowflake withCredentials(Object credentials) {
         this.credentials = credentials;
         return this;
     }
@@ -44,8 +48,8 @@ public class DestinationSnowflake {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("loading_method")
-    public java.util.Map<String, Object> loadingMethod;
-    public DestinationSnowflake withLoadingMethod(java.util.Map<String, Object> loadingMethod) {
+    public Object loadingMethod;
+    public DestinationSnowflake withLoadingMethod(Object loadingMethod) {
         this.loadingMethod = loadingMethod;
         return this;
     }

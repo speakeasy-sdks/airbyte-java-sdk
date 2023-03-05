@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationClickhouse
+ * The values required to configure the destination.
+**/
 public class DestinationClickhouse {
     @JsonProperty("airbyte-destination-name")
     public DestinationClickhouseClickhouseEnum airbyteDestinationName;
@@ -51,8 +55,8 @@ public class DestinationClickhouse {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tunnel_method")
-    public java.util.Map<String, Object> tunnelMethod;
-    public DestinationClickhouse withTunnelMethod(java.util.Map<String, Object> tunnelMethod) {
+    public Object tunnelMethod;
+    public DestinationClickhouse withTunnelMethod(Object tunnelMethod) {
         this.tunnelMethod = tunnelMethod;
         return this;
     }

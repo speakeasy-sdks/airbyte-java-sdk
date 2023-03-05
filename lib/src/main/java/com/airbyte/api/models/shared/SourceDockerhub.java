@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceDockerhub
+ * The values required to configure the source.
+**/
 public class SourceDockerhub {
     @JsonProperty("airbyte-source-name")
     public SourceDockerhubDockerhubEnum airbyteSourceName;

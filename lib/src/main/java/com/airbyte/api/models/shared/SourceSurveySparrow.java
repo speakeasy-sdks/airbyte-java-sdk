@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceSurveySparrow
+ * The values required to configure the source.
+**/
 public class SourceSurveySparrow {
     @JsonProperty("access_token")
     public String accessToken;
@@ -21,8 +25,8 @@ public class SourceSurveySparrow {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("region")
-    public java.util.Map<String, Object> region;
-    public SourceSurveySparrow withRegion(java.util.Map<String, Object> region) {
+    public Object region;
+    public SourceSurveySparrow withRegion(Object region) {
         this.region = region;
         return this;
     }

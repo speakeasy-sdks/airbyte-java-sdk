@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceAsana
+ * The values required to configure the source.
+**/
 public class SourceAsana {
     @JsonProperty("airbyte-source-name")
     public SourceAsanaAsanaEnum airbyteSourceName;
@@ -14,8 +18,8 @@ public class SourceAsana {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("credentials")
-    public java.util.Map<String, Object> credentials;
-    public SourceAsana withCredentials(java.util.Map<String, Object> credentials) {
+    public Object credentials;
+    public SourceAsana withCredentials(Object credentials) {
         this.credentials = credentials;
         return this;
     }

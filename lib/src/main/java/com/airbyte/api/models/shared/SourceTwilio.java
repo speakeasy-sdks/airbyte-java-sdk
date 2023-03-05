@@ -9,6 +9,10 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import java.time.OffsetDateTime;
 
+/**
+ * SourceTwilio
+ * The values required to configure the source.
+**/
 public class SourceTwilio {
     @JsonProperty("account_sid")
     public String accountSid;

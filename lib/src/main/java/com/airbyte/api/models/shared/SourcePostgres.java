@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourcePostgres
+ * The values required to configure the source.
+**/
 public class SourcePostgres {
     @JsonProperty("airbyte-source-name")
     public SourcePostgresPostgresEnum airbyteSourceName;
@@ -51,8 +55,8 @@ public class SourcePostgres {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("replication_method")
-    public java.util.Map<String, Object> replicationMethod;
-    public SourcePostgres withReplicationMethod(java.util.Map<String, Object> replicationMethod) {
+    public Object replicationMethod;
+    public SourcePostgres withReplicationMethod(Object replicationMethod) {
         this.replicationMethod = replicationMethod;
         return this;
     }
@@ -67,16 +71,16 @@ public class SourcePostgres {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("ssl_mode")
-    public java.util.Map<String, Object> sslMode;
-    public SourcePostgres withSslMode(java.util.Map<String, Object> sslMode) {
+    public Object sslMode;
+    public SourcePostgres withSslMode(Object sslMode) {
         this.sslMode = sslMode;
         return this;
     }
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tunnel_method")
-    public java.util.Map<String, Object> tunnelMethod;
-    public SourcePostgres withTunnelMethod(java.util.Map<String, Object> tunnelMethod) {
+    public Object tunnelMethod;
+    public SourcePostgres withTunnelMethod(Object tunnelMethod) {
         this.tunnelMethod = tunnelMethod;
         return this;
     }

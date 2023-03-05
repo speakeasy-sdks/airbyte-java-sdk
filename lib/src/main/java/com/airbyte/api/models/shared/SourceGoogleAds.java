@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceGoogleAds
+ * The values required to configure the source.
+**/
 public class SourceGoogleAds {
     @JsonProperty("airbyte-source-name")
     public SourceGoogleAdsGoogleAdsEnum airbyteSourceName;

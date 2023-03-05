@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceMixpanel
+ * The values required to configure the source.
+**/
 public class SourceMixpanel {
     @JsonProperty("airbyte-source-name")
     public SourceMixpanelMixpanelEnum airbyteSourceName;
@@ -22,8 +26,8 @@ public class SourceMixpanel {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("credentials")
-    public java.util.Map<String, Object> credentials;
-    public SourceMixpanel withCredentials(java.util.Map<String, Object> credentials) {
+    public Object credentials;
+    public SourceMixpanel withCredentials(Object credentials) {
         this.credentials = credentials;
         return this;
     }

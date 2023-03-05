@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationGoogleSheets
+ * The values required to configure the destination.
+**/
 public class DestinationGoogleSheets {
     @JsonProperty("airbyte-destination-name")
     public DestinationGoogleSheetsGoogleSheetsEnum airbyteDestinationName;

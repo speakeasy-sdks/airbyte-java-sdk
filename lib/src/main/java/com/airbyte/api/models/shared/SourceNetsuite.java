@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceNetsuite
+ * The values required to configure the source.
+**/
 public class SourceNetsuite {
     @JsonProperty("airbyte-source-name")
     public SourceNetsuiteNetsuiteEnum airbyteSourceName;

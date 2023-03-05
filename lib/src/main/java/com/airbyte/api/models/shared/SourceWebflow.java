@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceWebflow
+ * The values required to configure the source.
+**/
 public class SourceWebflow {
     @JsonProperty("airbyte-source-name")
     public SourceWebflowWebflowEnum airbyteSourceName;

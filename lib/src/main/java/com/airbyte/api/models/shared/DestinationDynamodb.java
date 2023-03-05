@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationDynamodb
+ * The values required to configure the destination.
+**/
 public class DestinationDynamodb {
     @JsonProperty("access_key_id")
     public String accessKeyId;

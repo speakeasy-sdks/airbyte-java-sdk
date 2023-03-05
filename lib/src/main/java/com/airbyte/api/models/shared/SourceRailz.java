@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceRailz
+ * The values required to configure the source.
+**/
 public class SourceRailz {
     @JsonProperty("airbyte-source-name")
     public SourceRailzRailzEnum airbyteSourceName;

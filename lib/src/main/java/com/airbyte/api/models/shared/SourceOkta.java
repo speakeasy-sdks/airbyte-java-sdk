@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceOkta
+ * The values required to configure the source.
+**/
 public class SourceOkta {
     @JsonProperty("airbyte-source-name")
     public SourceOktaOktaEnum airbyteSourceName;
@@ -14,8 +18,8 @@ public class SourceOkta {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("credentials")
-    public java.util.Map<String, Object> credentials;
-    public SourceOkta withCredentials(java.util.Map<String, Object> credentials) {
+    public Object credentials;
+    public SourceOkta withCredentials(Object credentials) {
         this.credentials = credentials;
         return this;
     }

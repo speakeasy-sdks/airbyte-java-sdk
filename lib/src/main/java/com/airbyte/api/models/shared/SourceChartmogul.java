@@ -7,6 +7,10 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import java.time.OffsetDateTime;
 
+/**
+ * SourceChartmogul
+ * The values required to configure the source.
+**/
 public class SourceChartmogul {
     @JsonProperty("airbyte-source-name")
     public SourceChartmogulChartmogulEnum airbyteSourceName;

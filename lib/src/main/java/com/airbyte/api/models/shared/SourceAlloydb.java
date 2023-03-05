@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceAlloydb
+ * The values required to configure the source.
+**/
 public class SourceAlloydb {
     @JsonProperty("airbyte-source-name")
     public SourceAlloydbAlloydbEnum airbyteSourceName;
@@ -51,8 +55,8 @@ public class SourceAlloydb {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("replication_method")
-    public java.util.Map<String, Object> replicationMethod;
-    public SourceAlloydb withReplicationMethod(java.util.Map<String, Object> replicationMethod) {
+    public Object replicationMethod;
+    public SourceAlloydb withReplicationMethod(Object replicationMethod) {
         this.replicationMethod = replicationMethod;
         return this;
     }
@@ -67,16 +71,16 @@ public class SourceAlloydb {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("ssl_mode")
-    public java.util.Map<String, Object> sslMode;
-    public SourceAlloydb withSslMode(java.util.Map<String, Object> sslMode) {
+    public Object sslMode;
+    public SourceAlloydb withSslMode(Object sslMode) {
         this.sslMode = sslMode;
         return this;
     }
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tunnel_method")
-    public java.util.Map<String, Object> tunnelMethod;
-    public SourceAlloydb withTunnelMethod(java.util.Map<String, Object> tunnelMethod) {
+    public Object tunnelMethod;
+    public SourceAlloydb withTunnelMethod(Object tunnelMethod) {
         this.tunnelMethod = tunnelMethod;
         return this;
     }

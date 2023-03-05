@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceHarvest
+ * The values required to configure the source.
+**/
 public class SourceHarvest {
     @JsonProperty("account_id")
     public String accountId;
@@ -21,8 +25,8 @@ public class SourceHarvest {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("credentials")
-    public java.util.Map<String, Object> credentials;
-    public SourceHarvest withCredentials(java.util.Map<String, Object> credentials) {
+    public Object credentials;
+    public SourceHarvest withCredentials(Object credentials) {
         this.credentials = credentials;
         return this;
     }

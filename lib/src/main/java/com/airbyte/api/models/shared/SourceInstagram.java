@@ -7,6 +7,10 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import java.time.OffsetDateTime;
 
+/**
+ * SourceInstagram
+ * The values required to configure the source.
+**/
 public class SourceInstagram {
     @JsonProperty("access_token")
     public String accessToken;

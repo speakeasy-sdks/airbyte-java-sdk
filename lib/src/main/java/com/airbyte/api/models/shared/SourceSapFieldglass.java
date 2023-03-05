@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceSapFieldglass
+ * The values required to configure the source.
+**/
 public class SourceSapFieldglass {
     @JsonProperty("airbyte-source-name")
     public SourceSapFieldglassSapFieldglassEnum airbyteSourceName;

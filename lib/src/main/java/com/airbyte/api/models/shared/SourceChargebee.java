@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceChargebee
+ * The values required to configure the source.
+**/
 public class SourceChargebee {
     @JsonProperty("airbyte-source-name")
     public SourceChargebeeChargebeeEnum airbyteSourceName;

@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceFirebolt
+ * The values required to configure the source.
+**/
 public class SourceFirebolt {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("account")

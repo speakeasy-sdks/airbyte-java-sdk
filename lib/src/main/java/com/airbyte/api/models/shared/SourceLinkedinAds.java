@@ -6,6 +6,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.LocalDate;
 
+/**
+ * SourceLinkedinAds
+ * The values required to configure the source.
+**/
 public class SourceLinkedinAds {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("account_ids")
@@ -24,8 +28,8 @@ public class SourceLinkedinAds {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("credentials")
-    public java.util.Map<String, Object> credentials;
-    public SourceLinkedinAds withCredentials(java.util.Map<String, Object> credentials) {
+    public Object credentials;
+    public SourceLinkedinAds withCredentials(Object credentials) {
         this.credentials = credentials;
         return this;
     }

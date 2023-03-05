@@ -9,6 +9,10 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import java.time.OffsetDateTime;
 
+/**
+ * SourceJira
+ * The values required to configure the source.
+**/
 public class SourceJira {
     @JsonProperty("airbyte-source-name")
     public SourceJiraJiraEnum airbyteSourceName;

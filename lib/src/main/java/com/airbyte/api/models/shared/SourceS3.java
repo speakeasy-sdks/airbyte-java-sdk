@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceS3
+ * The values required to configure the source.
+**/
 public class SourceS3 {
     @JsonProperty("airbyte-source-name")
     public SourceS3S3Enum airbyteSourceName;
@@ -21,8 +25,8 @@ public class SourceS3 {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("format")
-    public java.util.Map<String, Object> format;
-    public SourceS3 withFormat(java.util.Map<String, Object> format) {
+    public Object format;
+    public SourceS3 withFormat(Object format) {
         this.format = format;
         return this;
     }

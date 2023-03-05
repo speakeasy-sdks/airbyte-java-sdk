@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceZendeskSunshine
+ * The values required to configure the source.
+**/
 public class SourceZendeskSunshine {
     @JsonProperty("airbyte-source-name")
     public SourceZendeskSunshineZendeskSunshineEnum airbyteSourceName;
@@ -14,8 +18,8 @@ public class SourceZendeskSunshine {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("credentials")
-    public java.util.Map<String, Object> credentials;
-    public SourceZendeskSunshine withCredentials(java.util.Map<String, Object> credentials) {
+    public Object credentials;
+    public SourceZendeskSunshine withCredentials(Object credentials) {
         this.credentials = credentials;
         return this;
     }

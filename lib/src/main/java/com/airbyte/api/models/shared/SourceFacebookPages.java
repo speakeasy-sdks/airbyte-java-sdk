@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceFacebookPages
+ * The values required to configure the source.
+**/
 public class SourceFacebookPages {
     @JsonProperty("access_token")
     public String accessToken;

@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceDremio
+ * The values required to configure the source.
+**/
 public class SourceDremio {
     @JsonProperty("airbyte-source-name")
     public SourceDremioDremioEnum airbyteSourceName;

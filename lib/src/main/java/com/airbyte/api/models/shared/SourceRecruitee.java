@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceRecruitee
+ * The values required to configure the source.
+**/
 public class SourceRecruitee {
     @JsonProperty("airbyte-source-name")
     public SourceRecruiteeRecruiteeEnum airbyteSourceName;

@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationRedshift
+ * The values required to configure the destination.
+**/
 public class DestinationRedshift {
     @JsonProperty("airbyte-destination-name")
     public DestinationRedshiftRedshiftEnum airbyteDestinationName;
@@ -57,8 +61,8 @@ public class DestinationRedshift {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("uploading_method")
-    public java.util.Map<String, Object> uploadingMethod;
-    public DestinationRedshift withUploadingMethod(java.util.Map<String, Object> uploadingMethod) {
+    public Object uploadingMethod;
+    public DestinationRedshift withUploadingMethod(Object uploadingMethod) {
         this.uploadingMethod = uploadingMethod;
         return this;
     }

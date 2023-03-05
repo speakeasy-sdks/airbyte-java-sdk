@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceCoinApi
+ * The values required to configure the source.
+**/
 public class SourceCoinApi {
     @JsonProperty("airbyte-source-name")
     public SourceCoinApiCoinApiEnum airbyteSourceName;

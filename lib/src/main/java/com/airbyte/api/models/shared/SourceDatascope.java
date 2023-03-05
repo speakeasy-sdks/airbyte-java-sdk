@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceDatascope
+ * The values required to configure the source.
+**/
 public class SourceDatascope {
     @JsonProperty("airbyte-source-name")
     public SourceDatascopeDatascopeEnum airbyteSourceName;
