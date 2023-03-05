@@ -6,6 +6,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.LocalDate;
 
+/**
+ * SourceGoogleAnalyticsDataApi
+ * The values required to configure the source.
+**/
 public class SourceGoogleAnalyticsDataApi {
     @JsonProperty("airbyte-source-name")
     public SourceGoogleAnalyticsDataApiGoogleAnalyticsDataApiEnum airbyteSourceName;
@@ -16,8 +20,8 @@ public class SourceGoogleAnalyticsDataApi {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("credentials")
-    public java.util.Map<String, Object> credentials;
-    public SourceGoogleAnalyticsDataApi withCredentials(java.util.Map<String, Object> credentials) {
+    public Object credentials;
+    public SourceGoogleAnalyticsDataApi withCredentials(Object credentials) {
         this.credentials = credentials;
         return this;
     }

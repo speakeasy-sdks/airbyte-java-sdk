@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceGreenhouse
+ * The values required to configure the source.
+**/
 public class SourceGreenhouse {
     @JsonProperty("airbyte-source-name")
     public SourceGreenhouseGreenhouseEnum airbyteSourceName;

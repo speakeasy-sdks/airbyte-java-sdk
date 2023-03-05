@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceGlassfrog
+ * The values required to configure the source.
+**/
 public class SourceGlassfrog {
     @JsonProperty("airbyte-source-name")
     public SourceGlassfrogGlassfrogEnum airbyteSourceName;

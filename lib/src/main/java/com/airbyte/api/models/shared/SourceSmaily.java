@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceSmaily
+ * The values required to configure the source.
+**/
 public class SourceSmaily {
     @JsonProperty("airbyte-source-name")
     public SourceSmailySmailyEnum airbyteSourceName;

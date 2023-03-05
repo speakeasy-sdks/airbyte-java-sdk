@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceYoutubeAnalyticsBusiness
+ * The values required to configure the source.
+**/
 public class SourceYoutubeAnalyticsBusiness {
     @JsonProperty("airbyte-source-name")
     public SourceYoutubeAnalyticsBusinessYoutubeAnalyticsBusinessEnum airbyteSourceName;

@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationMysql
+ * The values required to configure the destination.
+**/
 public class DestinationMysql {
     @JsonProperty("airbyte-destination-name")
     public DestinationMysqlMysqlEnum airbyteDestinationName;
@@ -51,8 +55,8 @@ public class DestinationMysql {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tunnel_method")
-    public java.util.Map<String, Object> tunnelMethod;
-    public DestinationMysql withTunnelMethod(java.util.Map<String, Object> tunnelMethod) {
+    public Object tunnelMethod;
+    public DestinationMysql withTunnelMethod(Object tunnelMethod) {
         this.tunnelMethod = tunnelMethod;
         return this;
     }

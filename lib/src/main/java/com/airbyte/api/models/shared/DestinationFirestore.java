@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationFirestore
+ * The values required to configure the destination.
+**/
 public class DestinationFirestore {
     @JsonProperty("airbyte-destination-name")
     public DestinationFirestoreFirestoreEnum airbyteDestinationName;

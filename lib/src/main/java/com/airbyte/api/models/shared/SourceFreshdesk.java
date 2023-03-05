@@ -9,6 +9,10 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import java.time.OffsetDateTime;
 
+/**
+ * SourceFreshdesk
+ * The values required to configure the source.
+**/
 public class SourceFreshdesk {
     @JsonProperty("airbyte-source-name")
     public SourceFreshdeskFreshdeskEnum airbyteSourceName;

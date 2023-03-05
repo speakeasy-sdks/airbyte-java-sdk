@@ -9,6 +9,10 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import java.time.OffsetDateTime;
 
+/**
+ * SourceSftpBulk
+ * The values required to configure the source.
+**/
 public class SourceSftpBulk {
     @JsonProperty("airbyte-source-name")
     public SourceSftpBulkSftpBulkEnum airbyteSourceName;

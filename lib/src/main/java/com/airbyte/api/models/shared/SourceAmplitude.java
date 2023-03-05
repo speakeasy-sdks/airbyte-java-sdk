@@ -9,6 +9,10 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import java.time.OffsetDateTime;
 
+/**
+ * SourceAmplitude
+ * The values required to configure the source.
+**/
 public class SourceAmplitude {
     @JsonProperty("airbyte-source-name")
     public SourceAmplitudeAmplitudeEnum airbyteSourceName;

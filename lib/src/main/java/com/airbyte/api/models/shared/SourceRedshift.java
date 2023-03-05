@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceRedshift
+ * The values required to configure the source.
+**/
 public class SourceRedshift {
     @JsonProperty("airbyte-source-name")
     public SourceRedshiftRedshiftEnum airbyteSourceName;

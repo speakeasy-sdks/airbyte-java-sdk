@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceGoogleAnalyticsV4
+ * The values required to configure the source.
+**/
 public class SourceGoogleAnalyticsV4 {
     @JsonProperty("airbyte-source-name")
     public SourceGoogleAnalyticsV4GoogleAnalyticsV4Enum airbyteSourceName;
@@ -14,8 +18,8 @@ public class SourceGoogleAnalyticsV4 {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("credentials")
-    public java.util.Map<String, Object> credentials;
-    public SourceGoogleAnalyticsV4 withCredentials(java.util.Map<String, Object> credentials) {
+    public Object credentials;
+    public SourceGoogleAnalyticsV4 withCredentials(Object credentials) {
         this.credentials = credentials;
         return this;
     }

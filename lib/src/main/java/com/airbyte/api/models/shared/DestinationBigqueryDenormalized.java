@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationBigqueryDenormalized
+ * The values required to configure the destination.
+**/
 public class DestinationBigqueryDenormalized {
     @JsonProperty("airbyte-destination-name")
     public DestinationBigqueryDenormalizedBigqueryDenormalizedEnum airbyteDestinationName;
@@ -45,8 +49,8 @@ public class DestinationBigqueryDenormalized {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("loading_method")
-    public java.util.Map<String, Object> loadingMethod;
-    public DestinationBigqueryDenormalized withLoadingMethod(java.util.Map<String, Object> loadingMethod) {
+    public Object loadingMethod;
+    public DestinationBigqueryDenormalized withLoadingMethod(Object loadingMethod) {
         this.loadingMethod = loadingMethod;
         return this;
     }

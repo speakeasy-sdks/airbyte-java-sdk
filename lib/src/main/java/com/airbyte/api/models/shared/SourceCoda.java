@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceCoda
+ * The values required to configure the source.
+**/
 public class SourceCoda {
     @JsonProperty("airbyte-source-name")
     public SourceCodaCodaEnum airbyteSourceName;

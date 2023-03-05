@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceOrb
+ * The values required to configure the source.
+**/
 public class SourceOrb {
     @JsonProperty("airbyte-source-name")
     public SourceOrbOrbEnum airbyteSourceName;

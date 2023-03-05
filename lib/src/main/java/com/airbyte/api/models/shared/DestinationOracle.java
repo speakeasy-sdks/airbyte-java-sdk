@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationOracle
+ * The values required to configure the destination.
+**/
 public class DestinationOracle {
     @JsonProperty("airbyte-destination-name")
     public DestinationOracleOracleEnum airbyteDestinationName;
@@ -59,8 +63,8 @@ public class DestinationOracle {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tunnel_method")
-    public java.util.Map<String, Object> tunnelMethod;
-    public DestinationOracle withTunnelMethod(java.util.Map<String, Object> tunnelMethod) {
+    public Object tunnelMethod;
+    public DestinationOracle withTunnelMethod(Object tunnelMethod) {
         this.tunnelMethod = tunnelMethod;
         return this;
     }

@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationAmazonSqs
+ * The values required to configure the destination.
+**/
 public class DestinationAmazonSqs {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("access_key")

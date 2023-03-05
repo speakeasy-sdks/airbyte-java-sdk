@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationMongodb
+ * The values required to configure the destination.
+**/
 public class DestinationMongodb {
     @JsonProperty("airbyte-destination-name")
     public DestinationMongodbMongodbEnum airbyteDestinationName;
@@ -13,8 +17,8 @@ public class DestinationMongodb {
     }
     
     @JsonProperty("auth_type")
-    public java.util.Map<String, Object> authType;
-    public DestinationMongodb withAuthType(java.util.Map<String, Object> authType) {
+    public Object authType;
+    public DestinationMongodb withAuthType(Object authType) {
         this.authType = authType;
         return this;
     }
@@ -28,16 +32,16 @@ public class DestinationMongodb {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("instance_type")
-    public java.util.Map<String, Object> instanceType;
-    public DestinationMongodb withInstanceType(java.util.Map<String, Object> instanceType) {
+    public Object instanceType;
+    public DestinationMongodb withInstanceType(Object instanceType) {
         this.instanceType = instanceType;
         return this;
     }
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tunnel_method")
-    public java.util.Map<String, Object> tunnelMethod;
-    public DestinationMongodb withTunnelMethod(java.util.Map<String, Object> tunnelMethod) {
+    public Object tunnelMethod;
+    public DestinationMongodb withTunnelMethod(Object tunnelMethod) {
         this.tunnelMethod = tunnelMethod;
         return this;
     }

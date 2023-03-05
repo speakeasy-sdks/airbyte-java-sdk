@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceStripe
+ * The values required to configure the source.
+**/
 public class SourceStripe {
     @JsonProperty("account_id")
     public String accountId;

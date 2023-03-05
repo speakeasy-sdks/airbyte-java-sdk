@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationElasticsearch
+ * The values required to configure the destination.
+**/
 public class DestinationElasticsearch {
     @JsonProperty("airbyte-destination-name")
     public DestinationElasticsearchElasticsearchEnum airbyteDestinationName;
@@ -14,8 +18,8 @@ public class DestinationElasticsearch {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("authenticationMethod")
-    public java.util.Map<String, Object> authenticationMethod;
-    public DestinationElasticsearch withAuthenticationMethod(java.util.Map<String, Object> authenticationMethod) {
+    public Object authenticationMethod;
+    public DestinationElasticsearch withAuthenticationMethod(Object authenticationMethod) {
         this.authenticationMethod = authenticationMethod;
         return this;
     }

@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationBigquery
+ * The values required to configure the destination.
+**/
 public class DestinationBigquery {
     @JsonProperty("airbyte-destination-name")
     public DestinationBigqueryBigqueryEnum airbyteDestinationName;
@@ -44,8 +48,8 @@ public class DestinationBigquery {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("loading_method")
-    public java.util.Map<String, Object> loadingMethod;
-    public DestinationBigquery withLoadingMethod(java.util.Map<String, Object> loadingMethod) {
+    public Object loadingMethod;
+    public DestinationBigquery withLoadingMethod(Object loadingMethod) {
         this.loadingMethod = loadingMethod;
         return this;
     }

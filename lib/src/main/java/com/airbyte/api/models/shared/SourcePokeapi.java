@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourcePokeapi
+ * The values required to configure the source.
+**/
 public class SourcePokeapi {
     @JsonProperty("airbyte-source-name")
     public SourcePokeapiPokeapiEnum airbyteSourceName;

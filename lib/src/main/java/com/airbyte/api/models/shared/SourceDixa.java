@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceDixa
+ * The values required to configure the source.
+**/
 public class SourceDixa {
     @JsonProperty("airbyte-source-name")
     public SourceDixaDixaEnum airbyteSourceName;

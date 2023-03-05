@@ -6,6 +6,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.LocalDate;
 
+/**
+ * SourceBingAds
+ * The values required to configure the source.
+**/
 public class SourceBingAds {
     @JsonProperty("airbyte-source-name")
     public SourceBingAdsBingAdsEnum airbyteSourceName;

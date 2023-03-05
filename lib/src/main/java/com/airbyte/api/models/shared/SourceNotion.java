@@ -9,6 +9,10 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import java.time.OffsetDateTime;
 
+/**
+ * SourceNotion
+ * The values required to configure the source.
+**/
 public class SourceNotion {
     @JsonProperty("airbyte-source-name")
     public SourceNotionNotionEnum airbyteSourceName;
@@ -19,8 +23,8 @@ public class SourceNotion {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("credentials")
-    public java.util.Map<String, Object> credentials;
-    public SourceNotion withCredentials(java.util.Map<String, Object> credentials) {
+    public Object credentials;
+    public SourceNotion withCredentials(Object credentials) {
         this.credentials = credentials;
         return this;
     }

@@ -9,6 +9,10 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import java.time.OffsetDateTime;
 
+/**
+ * SourceZendeskChat
+ * The values required to configure the source.
+**/
 public class SourceZendeskChat {
     @JsonProperty("airbyte-source-name")
     public SourceZendeskChatZendeskChatEnum airbyteSourceName;
@@ -19,8 +23,8 @@ public class SourceZendeskChat {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("credentials")
-    public java.util.Map<String, Object> credentials;
-    public SourceZendeskChat withCredentials(java.util.Map<String, Object> credentials) {
+    public Object credentials;
+    public SourceZendeskChat withCredentials(Object credentials) {
         this.credentials = credentials;
         return this;
     }

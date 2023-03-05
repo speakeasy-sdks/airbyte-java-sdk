@@ -9,6 +9,10 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import java.time.OffsetDateTime;
 
+/**
+ * SourceFacebookMarketing
+ * The values required to configure the source.
+**/
 public class SourceFacebookMarketing {
     @JsonProperty("access_token")
     public String accessToken;

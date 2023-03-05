@@ -6,6 +6,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.LocalDate;
 
+/**
+ * SourceSenseforce
+ * The values required to configure the source.
+**/
 public class SourceSenseforce {
     @JsonProperty("access_token")
     public String accessToken;

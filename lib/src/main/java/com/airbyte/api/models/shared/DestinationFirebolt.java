@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationFirebolt
+ * The values required to configure the destination.
+**/
 public class DestinationFirebolt {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("account")
@@ -45,8 +49,8 @@ public class DestinationFirebolt {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("loading_method")
-    public java.util.Map<String, Object> loadingMethod;
-    public DestinationFirebolt withLoadingMethod(java.util.Map<String, Object> loadingMethod) {
+    public Object loadingMethod;
+    public DestinationFirebolt withLoadingMethod(Object loadingMethod) {
         this.loadingMethod = loadingMethod;
         return this;
     }

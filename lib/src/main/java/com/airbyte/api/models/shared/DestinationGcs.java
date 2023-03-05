@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationGcs
+ * The values required to configure the destination.
+**/
 public class DestinationGcs {
     @JsonProperty("airbyte-destination-name")
     public DestinationGcsGcsEnum airbyteDestinationName;
@@ -13,15 +17,15 @@ public class DestinationGcs {
     }
     
     @JsonProperty("credential")
-    public java.util.Map<String, Object> credential;
-    public DestinationGcs withCredential(java.util.Map<String, Object> credential) {
+    public Object credential;
+    public DestinationGcs withCredential(Object credential) {
         this.credential = credential;
         return this;
     }
     
     @JsonProperty("format")
-    public java.util.Map<String, Object> format;
-    public DestinationGcs withFormat(java.util.Map<String, Object> format) {
+    public Object format;
+    public DestinationGcs withFormat(Object format) {
         this.format = format;
         return this;
     }

@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.LocalDate;
 
+/**
+ * SourcePrestashop
+ * The values required to configure the source.
+**/
 public class SourcePrestashop {
     @JsonProperty("access_key")
     public String accessKey;

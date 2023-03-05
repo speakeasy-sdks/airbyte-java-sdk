@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceTwilioTaskrouter
+ * The values required to configure the source.
+**/
 public class SourceTwilioTaskrouter {
     @JsonProperty("account_sid")
     public String accountSid;

@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationS3Glue
+ * The values required to configure the destination.
+**/
 public class DestinationS3Glue {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("access_key_id")
@@ -29,8 +33,8 @@ public class DestinationS3Glue {
     }
     
     @JsonProperty("format")
-    public java.util.Map<String, Object> format;
-    public DestinationS3Glue withFormat(java.util.Map<String, Object> format) {
+    public Object format;
+    public DestinationS3Glue withFormat(Object format) {
         this.format = format;
         return this;
     }

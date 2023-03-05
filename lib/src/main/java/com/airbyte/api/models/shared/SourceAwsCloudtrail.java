@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.LocalDate;
 
+/**
+ * SourceAwsCloudtrail
+ * The values required to configure the source.
+**/
 public class SourceAwsCloudtrail {
     @JsonProperty("airbyte-source-name")
     public SourceAwsCloudtrailAwsCloudtrailEnum airbyteSourceName;

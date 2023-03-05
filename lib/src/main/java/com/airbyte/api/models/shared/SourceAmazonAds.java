@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceAmazonAds
+ * The values required to configure the source.
+**/
 public class SourceAmazonAds {
     @JsonProperty("airbyte-source-name")
     public SourceAmazonAdsAmazonAdsEnum airbyteSourceName;

@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceGnews
+ * The values required to configure the source.
+**/
 public class SourceGnews {
     @JsonProperty("airbyte-source-name")
     public SourceGnewsGnewsEnum airbyteSourceName;

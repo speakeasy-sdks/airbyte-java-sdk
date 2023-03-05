@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationAzureBlobStorage
+ * The values required to configure the destination.
+**/
 public class DestinationAzureBlobStorage {
     @JsonProperty("airbyte-destination-name")
     public DestinationAzureBlobStorageAzureBlobStorageEnum airbyteDestinationName;
@@ -59,8 +63,8 @@ public class DestinationAzureBlobStorage {
     }
     
     @JsonProperty("format")
-    public java.util.Map<String, Object> format;
-    public DestinationAzureBlobStorage withFormat(java.util.Map<String, Object> format) {
+    public Object format;
+    public DestinationAzureBlobStorage withFormat(Object format) {
         this.format = format;
         return this;
     }

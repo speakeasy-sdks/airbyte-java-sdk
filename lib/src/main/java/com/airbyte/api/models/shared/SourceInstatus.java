@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceInstatus
+ * The values required to configure the source.
+**/
 public class SourceInstatus {
     @JsonProperty("airbyte-source-name")
     public SourceInstatusInstatusEnum airbyteSourceName;

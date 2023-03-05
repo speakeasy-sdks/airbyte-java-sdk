@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceSendinblue
+ * The values required to configure the source.
+**/
 public class SourceSendinblue {
     @JsonProperty("airbyte-source-name")
     public SourceSendinblueSendinblueEnum airbyteSourceName;

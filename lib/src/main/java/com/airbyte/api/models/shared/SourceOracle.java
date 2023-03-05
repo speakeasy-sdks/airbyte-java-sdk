@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceOracle
+ * The values required to configure the source.
+**/
 public class SourceOracle {
     @JsonProperty("airbyte-source-name")
     public SourceOracleOracleEnum airbyteSourceName;
@@ -14,15 +18,15 @@ public class SourceOracle {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("connection_data")
-    public java.util.Map<String, Object> connectionData;
-    public SourceOracle withConnectionData(java.util.Map<String, Object> connectionData) {
+    public Object connectionData;
+    public SourceOracle withConnectionData(Object connectionData) {
         this.connectionData = connectionData;
         return this;
     }
     
     @JsonProperty("encryption")
-    public java.util.Map<String, Object> encryption;
-    public SourceOracle withEncryption(java.util.Map<String, Object> encryption) {
+    public Object encryption;
+    public SourceOracle withEncryption(Object encryption) {
         this.encryption = encryption;
         return this;
     }
@@ -67,8 +71,8 @@ public class SourceOracle {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tunnel_method")
-    public java.util.Map<String, Object> tunnelMethod;
-    public SourceOracle withTunnelMethod(java.util.Map<String, Object> tunnelMethod) {
+    public Object tunnelMethod;
+    public SourceOracle withTunnelMethod(Object tunnelMethod) {
         this.tunnelMethod = tunnelMethod;
         return this;
     }

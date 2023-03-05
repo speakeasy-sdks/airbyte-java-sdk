@@ -9,6 +9,10 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import java.time.OffsetDateTime;
 
+/**
+ * SourceSmartsheets
+ * The values required to configure the source.
+**/
 public class SourceSmartsheets {
     @JsonProperty("airbyte-source-name")
     public SourceSmartsheetsSmartsheetsEnum airbyteSourceName;
@@ -18,8 +22,8 @@ public class SourceSmartsheets {
     }
     
     @JsonProperty("credentials")
-    public java.util.Map<String, Object> credentials;
-    public SourceSmartsheets withCredentials(java.util.Map<String, Object> credentials) {
+    public Object credentials;
+    public SourceSmartsheets withCredentials(Object credentials) {
         this.credentials = credentials;
         return this;
     }

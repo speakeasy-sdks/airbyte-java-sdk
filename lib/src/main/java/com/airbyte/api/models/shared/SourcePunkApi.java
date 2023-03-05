@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourcePunkApi
+ * The values required to configure the source.
+**/
 public class SourcePunkApi {
     @JsonProperty("airbyte-source-name")
     public SourcePunkApiPunkApiEnum airbyteSourceName;

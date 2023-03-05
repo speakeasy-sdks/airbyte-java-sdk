@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceSentry
+ * The values required to configure the source.
+**/
 public class SourceSentry {
     @JsonProperty("airbyte-source-name")
     public SourceSentrySentryEnum airbyteSourceName;

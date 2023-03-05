@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceTiktokMarketing
+ * The values required to configure the source.
+**/
 public class SourceTiktokMarketing {
     @JsonProperty("airbyte-source-name")
     public SourceTiktokMarketingTiktokMarketingEnum airbyteSourceName;
@@ -14,8 +18,8 @@ public class SourceTiktokMarketing {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("credentials")
-    public java.util.Map<String, Object> credentials;
-    public SourceTiktokMarketing withCredentials(java.util.Map<String, Object> credentials) {
+    public Object credentials;
+    public SourceTiktokMarketing withCredentials(Object credentials) {
         this.credentials = credentials;
         return this;
     }

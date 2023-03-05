@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceFileSecure
+ * The values required to configure the source.
+**/
 public class SourceFileSecure {
     @JsonProperty("airbyte-source-name")
     public SourceFileSecureFileSecureEnum airbyteSourceName;
@@ -27,8 +31,8 @@ public class SourceFileSecure {
     }
     
     @JsonProperty("provider")
-    public java.util.Map<String, Object> provider;
-    public SourceFileSecure withProvider(java.util.Map<String, Object> provider) {
+    public Object provider;
+    public SourceFileSecure withProvider(Object provider) {
         this.provider = provider;
         return this;
     }

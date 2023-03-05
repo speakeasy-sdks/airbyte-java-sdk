@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationRedis
+ * The values required to configure the destination.
+**/
 public class DestinationRedis {
     @JsonProperty("airbyte-destination-name")
     public DestinationRedisRedisEnum airbyteDestinationName;
@@ -51,16 +55,16 @@ public class DestinationRedis {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("ssl_mode")
-    public java.util.Map<String, Object> sslMode;
-    public DestinationRedis withSslMode(java.util.Map<String, Object> sslMode) {
+    public Object sslMode;
+    public DestinationRedis withSslMode(Object sslMode) {
         this.sslMode = sslMode;
         return this;
     }
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tunnel_method")
-    public java.util.Map<String, Object> tunnelMethod;
-    public DestinationRedis withTunnelMethod(java.util.Map<String, Object> tunnelMethod) {
+    public Object tunnelMethod;
+    public DestinationRedis withTunnelMethod(Object tunnelMethod) {
         this.tunnelMethod = tunnelMethod;
         return this;
     }

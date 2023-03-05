@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * DestinationMariadbColumnstore
+ * The values required to configure the destination.
+**/
 public class DestinationMariadbColumnstore {
     @JsonProperty("airbyte-destination-name")
     public DestinationMariadbColumnstoreMariadbColumnstoreEnum airbyteDestinationName;
@@ -51,8 +55,8 @@ public class DestinationMariadbColumnstore {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tunnel_method")
-    public java.util.Map<String, Object> tunnelMethod;
-    public DestinationMariadbColumnstore withTunnelMethod(java.util.Map<String, Object> tunnelMethod) {
+    public Object tunnelMethod;
+    public DestinationMariadbColumnstore withTunnelMethod(Object tunnelMethod) {
         this.tunnelMethod = tunnelMethod;
         return this;
     }

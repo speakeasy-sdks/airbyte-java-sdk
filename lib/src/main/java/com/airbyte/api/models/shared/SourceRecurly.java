@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceRecurly
+ * The values required to configure the source.
+**/
 public class SourceRecurly {
     @JsonProperty("airbyte-source-name")
     public SourceRecurlyRecurlyEnum airbyteSourceName;

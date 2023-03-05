@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceIp2whois
+ * The values required to configure the source.
+**/
 public class SourceIp2whois {
     @JsonProperty("airbyte-source-name")
     public SourceIp2whoisIp2whoisEnum airbyteSourceName;

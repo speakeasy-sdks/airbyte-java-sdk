@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.LocalDate;
 
+/**
+ * SourceBraze
+ * The values required to configure the source.
+**/
 public class SourceBraze {
     @JsonProperty("airbyte-source-name")
     public SourceBrazeBrazeEnum airbyteSourceName;

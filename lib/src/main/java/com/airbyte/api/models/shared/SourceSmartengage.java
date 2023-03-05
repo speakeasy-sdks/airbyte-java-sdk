@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceSmartengage
+ * The values required to configure the source.
+**/
 public class SourceSmartengage {
     @JsonProperty("airbyte-source-name")
     public SourceSmartengageSmartengageEnum airbyteSourceName;

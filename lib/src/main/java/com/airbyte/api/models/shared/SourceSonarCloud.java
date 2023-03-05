@@ -6,6 +6,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.LocalDate;
 
+/**
+ * SourceSonarCloud
+ * The values required to configure the source.
+**/
 public class SourceSonarCloud {
     @JsonProperty("airbyte-source-name")
     public SourceSonarCloudSonarCloudEnum airbyteSourceName;

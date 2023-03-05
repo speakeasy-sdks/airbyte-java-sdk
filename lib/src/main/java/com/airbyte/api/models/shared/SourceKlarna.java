@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceKlarna
+ * The values required to configure the source.
+**/
 public class SourceKlarna {
     @JsonProperty("airbyte-source-name")
     public SourceKlarnaKlarnaEnum airbyteSourceName;

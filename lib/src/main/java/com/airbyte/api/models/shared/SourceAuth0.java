@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceAuth0
+ * The values required to configure the source.
+**/
 public class SourceAuth0 {
     @JsonProperty("airbyte-source-name")
     public SourceAuth0Auth0Enum airbyteSourceName;
@@ -18,8 +22,8 @@ public class SourceAuth0 {
     }
     
     @JsonProperty("credentials")
-    public java.util.Map<String, Object> credentials;
-    public SourceAuth0 withCredentials(java.util.Map<String, Object> credentials) {
+    public Object credentials;
+    public SourceAuth0 withCredentials(Object credentials) {
         this.credentials = credentials;
         return this;
     }

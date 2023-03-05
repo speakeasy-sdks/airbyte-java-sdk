@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceClickhouse
+ * The values required to configure the source.
+**/
 public class SourceClickhouse {
     @JsonProperty("airbyte-source-name")
     public SourceClickhouseClickhouseEnum airbyteSourceName;
@@ -43,8 +47,8 @@ public class SourceClickhouse {
     
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tunnel_method")
-    public java.util.Map<String, Object> tunnelMethod;
-    public SourceClickhouse withTunnelMethod(java.util.Map<String, Object> tunnelMethod) {
+    public Object tunnelMethod;
+    public SourceClickhouse withTunnelMethod(Object tunnelMethod) {
         this.tunnelMethod = tunnelMethod;
         return this;
     }

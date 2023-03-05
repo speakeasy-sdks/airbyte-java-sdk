@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceClickupApi
+ * The values required to configure the source.
+**/
 public class SourceClickupApi {
     @JsonProperty("airbyte-source-name")
     public SourceClickupApiClickupApiEnum airbyteSourceName;

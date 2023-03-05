@@ -2,6 +2,10 @@ package com.airbyte.api.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * SourceLemlist
+ * The values required to configure the source.
+**/
 public class SourceLemlist {
     @JsonProperty("airbyte-source-name")
     public SourceLemlistLemlistEnum airbyteSourceName;
