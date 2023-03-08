@@ -11,4 +11,4 @@ java:
   version: ""
   artifactID: api
   groupID: com.airbyte
-  projectName: openapi
+  projectName: sdk
