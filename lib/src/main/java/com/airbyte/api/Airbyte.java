@@ -19,8 +19,8 @@ public class Airbyte {
 	private com.airbyte.api.models.shared.Security _security;
 	private String _serverUrl;
 	private String _language = "java";
-	private String _sdkVersion = "0.1.3";
-	private String _genVersion = "1.8.5";
+	private String _sdkVersion = "0.0.1";
+	private String _genVersion = "1.8.7";
 
 	public static class Builder {
 		private HTTPClient client;

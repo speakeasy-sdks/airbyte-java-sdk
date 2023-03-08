@@ -23,7 +23,7 @@ The Developer Portal UI can also be used to help build your integration by showi
 ### Gradle
 
 ```groovy
-implementation 'com.airbyte.api:openapi:0.1.3'
+implementation 'com.airbyte.api:sdk:0.0.1'
 ```
 <!-- End SDK Installation -->
 
@@ -34,6 +34,9 @@ package hello.world;
 
 import com.airbyte.api.Airbyte;
 import com.airbyte.api.models.shared.Security;
+import com.airbyte.api.models.operations.CreateConnectionRequest;
+import com.airbyte.api.models.operations.CreateConnectionResponse;
+import com.airbyte.api.models.shared.ConnectionCreate;
 
 public class Application {
     public static void main(String[] args) {

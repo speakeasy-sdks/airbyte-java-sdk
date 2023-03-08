@@ -4,6 +4,9 @@ package hello.world;
 
 import com.airbyte.api.Airbyte;
 import com.airbyte.api.models.shared.Security;
+import com.airbyte.api.models.operations.CreateConnectionRequest;
+import com.airbyte.api.models.operations.CreateConnectionResponse;
+import com.airbyte.api.models.shared.ConnectionCreate;
 
 public class Application {
     public static void main(String[] args) {
