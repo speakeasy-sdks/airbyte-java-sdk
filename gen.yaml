@@ -8,7 +8,7 @@ generation:
   sdkClassName: airbyte
   sdkFlattening: true
 java:
-  version: 0.0.1
+  version: ""
   artifactID: api
   groupID: com.airbyte
   projectName: sdk
