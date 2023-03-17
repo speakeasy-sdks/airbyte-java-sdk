@@ -1,11 +1,12 @@
 package com.airbyte.api.models.operations;
 
-
+import com.airbyte.api.utils.SpeakeasyMetadata;
 
 public class GetJobRequest {
-    public GetJobPathParams pathParams;
-    public GetJobRequest withPathParams(GetJobPathParams pathParams) {
-        this.pathParams = pathParams;
+    @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=jobId")
+    public Long jobId;
+    public GetJobRequest withJobId(Long jobId) {
+        this.jobId = jobId;
         return this;
     }
     

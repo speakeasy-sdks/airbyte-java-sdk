@@ -30,14 +30,14 @@ public class Connections {
     /**
      * createConnection - Create a connection
     **/
-    public com.airbyte.api.models.operations.CreateConnectionResponse createConnection(com.airbyte.api.models.operations.CreateConnectionRequest request) throws Exception {
+    public com.airbyte.api.models.operations.CreateConnectionResponse createConnection(com.airbyte.api.models.shared.ConnectionCreate request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = com.airbyte.api.utils.Utils.generateURL(baseUrl, "/connections");
         
         HTTPRequest req = new HTTPRequest();
         req.setMethod("POST");
         req.setURL(url);
-        SerializedBody serializedRequestBody = com.airbyte.api.utils.Utils.serializeRequestBody(request);
+        SerializedBody serializedRequestBody = com.airbyte.api.utils.Utils.serializeRequestBody(request, "request", "json");
         req.setBody(serializedRequestBody);
         
         

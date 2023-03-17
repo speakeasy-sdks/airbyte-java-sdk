@@ -11,9 +11,6 @@ import org.apache.http.NameValuePair;
 
 public class Jobs {
 	
-	
-	
-	
 	private HTTPClient _defaultClient;
 	private HTTPClient _securityClient;
 	private String _serverUrl;
@@ -36,7 +33,7 @@ public class Jobs {
     **/
     public com.airbyte.api.models.operations.CancelJobResponse cancelJob(com.airbyte.api.models.operations.CancelJobRequest request) throws Exception {
         String baseUrl = this._serverUrl;
-        String url = com.airbyte.api.utils.Utils.generateURL(baseUrl, "/jobs/{jobId}", request.pathParams);
+        String url = com.airbyte.api.utils.Utils.generateURL(com.airbyte.api.models.operations.CancelJobRequest.class, baseUrl, "/jobs/{jobId}", request, null);
         
         HTTPRequest req = new HTTPRequest();
         req.setMethod("DELETE");
@@ -71,14 +68,14 @@ public class Jobs {
     /**
      * createJob - Trigger a sync or reset job of a connection
     **/
-    public com.airbyte.api.models.operations.CreateJobResponse createJob(com.airbyte.api.models.operations.CreateJobRequest request) throws Exception {
+    public com.airbyte.api.models.operations.CreateJobResponse createJob(com.airbyte.api.models.shared.JobCreate request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = com.airbyte.api.utils.Utils.generateURL(baseUrl, "/jobs");
         
         HTTPRequest req = new HTTPRequest();
         req.setMethod("POST");
         req.setURL(url);
-        SerializedBody serializedRequestBody = com.airbyte.api.utils.Utils.serializeRequestBody(request);
+        SerializedBody serializedRequestBody = com.airbyte.api.utils.Utils.serializeRequestBody(request, "request", "json");
         if (serializedRequestBody == null) {
             throw new Exception("Request body is required");
         }
@@ -115,7 +112,7 @@ public class Jobs {
     **/
     public com.airbyte.api.models.operations.GetJobResponse getJob(com.airbyte.api.models.operations.GetJobRequest request) throws Exception {
         String baseUrl = this._serverUrl;
-        String url = com.airbyte.api.utils.Utils.generateURL(baseUrl, "/jobs/{jobId}", request.pathParams);
+        String url = com.airbyte.api.utils.Utils.generateURL(com.airbyte.api.models.operations.GetJobRequest.class, baseUrl, "/jobs/{jobId}", request, null);
         
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
@@ -158,7 +155,7 @@ public class Jobs {
         req.setMethod("GET");
         req.setURL(url);
         
-        java.util.List<NameValuePair> queryParams = com.airbyte.api.utils.Utils.getQueryParams(request.queryParams);
+        java.util.List<NameValuePair> queryParams = com.airbyte.api.utils.Utils.getQueryParams(com.airbyte.api.models.operations.ListJobsRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
                 req.addQueryParam(queryParam);

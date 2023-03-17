@@ -32,14 +32,14 @@ public class Sources {
      *
      * Creates a source given a name, workspace id, and a json blob containing the configuration for the source.
     **/
-    public com.airbyte.api.models.operations.CreateSourceResponse createSource(com.airbyte.api.models.operations.CreateSourceRequest request) throws Exception {
+    public com.airbyte.api.models.operations.CreateSourceResponse createSource(com.airbyte.api.models.shared.SourceCreate request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = com.airbyte.api.utils.Utils.generateURL(baseUrl, "/sources");
         
         HTTPRequest req = new HTTPRequest();
         req.setMethod("POST");
         req.setURL(url);
-        SerializedBody serializedRequestBody = com.airbyte.api.utils.Utils.serializeRequestBody(request);
+        SerializedBody serializedRequestBody = com.airbyte.api.utils.Utils.serializeRequestBody(request, "request", "json");
         req.setBody(serializedRequestBody);
         
         
